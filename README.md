@@ -142,6 +142,8 @@ GitOps-Multi-CI-Microservices/
 │   ├── prometheus-values.yaml
 │   └── loki-values.yaml
 │
+├── .github/workflows/
+│   └── sync-to-gitlab.yml    # Github-gitlab sync workflow code
 ├── docker-compose.yml        # Docker Compose for local testing
 └── README.md                 # Project overview
 ```
