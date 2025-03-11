@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Debug GitLab Token
+      - name: Debug GitLab Token Issue
         run: |
           echo "GitLab Token: ${{ secrets.GITLAB_TOKEN }}"
 
