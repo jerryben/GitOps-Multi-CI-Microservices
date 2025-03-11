@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  product-service:
+    build: ./product-service
+    ports:
+      - "5000:5000"
+
+  order-service:
+    build: ./order-service
+    ports:
+      - "8080:8080"
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "3000:3000"
+
+  payment-service:
+    build: ./payment-service
+    ports:
+      - "4000:4000"

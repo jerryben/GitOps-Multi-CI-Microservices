@@ -1,0 +1,21 @@
+stages:
+  - build
+  - test
+  - dockerize
+  - deploy
+build:
+  stage: build
+  script:
+    - npm install
+test:
+  stage: test
+  script:
+    - npm test
+dockerize:
+  stage: dockerize
+  script:
+    - docker build -t digtranza/user-service:latest .
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+    - docker push digtranza/user-service:latest
+  only:
+    - main

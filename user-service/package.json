@@ -1,0 +1,12 @@
+{
+    "name": "user-service",
+    "version": "1.0.0",
+    "description": "A basic package.json file",
+    "main": "app.js",
+    "author": "Jeremiah Onwoh",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+
+}
